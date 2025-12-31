@@ -1,0 +1,48 @@
+{
+  "name": "did-resolver-cli",
+  "version": "0.0.1",
+  "description": "CLI tool to resolve Decentralized Identifiers (DIDs)",
+  "keywords": [
+    "did",
+    "did-core",
+    "resolver",
+    "ssi"
+  ],
+  "license": "Apache-2.0",
+  "author": "Sai Ranjit Tummalapalli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sairanjit/did-resolver-cli"
+  },
+  "bin": {
+    "did-resolver-cli": "./dist/bin/did-resolver-cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "scripts": {
+    "build": "tsdx build",
+    "lint": "tsdx lint",
+    "format": "tsdx format",
+    "format:check": "tsdx format --check",
+    "typecheck": "tsdx typecheck",
+    "prepublishOnly": "bun run build"
+  },
+  "dependencies": {
+    "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "bunchee": "^6.9.3",
+    "tsdx": "^2.0.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
