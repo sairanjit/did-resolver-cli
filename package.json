@@ -31,12 +31,15 @@
     "format": "tsdx format",
     "format:check": "tsdx format --check",
     "typecheck": "tsdx typecheck",
-    "prepublishOnly": "bun run build"
+    "prepublishOnly": "bun run build",
+    "changeset": "changeset",
+    "release": "bun run build && changeset publish"
   },
   "dependencies": {
     "commander": "^14.0.2"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "@types/node": "^24.10.0",
     "bunchee": "^6.9.3",
     "tsdx": "^2.0.0",
