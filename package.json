@@ -22,8 +22,7 @@
   ],
   "type": "module",
   "publishConfig": {
-    "access": "public",
-    "directory": "dist"
+    "access": "public"
   },
   "scripts": {
     "build": "tsdx build",
