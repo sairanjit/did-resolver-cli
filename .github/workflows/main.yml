@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build, lint, and test on Node 24
+    name: Build and lint on Node 24
     runs-on: ubuntu-latest
 
     steps:
