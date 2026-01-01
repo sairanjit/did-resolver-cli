@@ -2,6 +2,8 @@
 
 A command-line tool to resolve Decentralized Identifiers (DIDs) using the [Universal Resolver](https://dev.uniresolver.io/).
 
+![Demo](./assets/demo.gif)
+
 ## Installation
 
 ```bash
